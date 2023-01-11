@@ -27,6 +27,7 @@ export const Drawer: React.FC<DrawerProps> = ({ isDrawerOpen, onChange }) => (
     <DrawerHeader>
       <Button
         fullWidth
+        disableElevation
         onClick={onChange}
         sx={{
           m: 1,
@@ -36,7 +37,6 @@ export const Drawer: React.FC<DrawerProps> = ({ isDrawerOpen, onChange }) => (
           justifyContent: "flex-start",
           backgroundColor: "#E6EFFE",
         }}
-        disableElevation
         startIcon={<FolderIcon sx={{ mr: 2 }} />}
       >
         Examples
